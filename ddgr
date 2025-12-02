@@ -91,6 +91,7 @@ TEXT_BROWSERS = ['elinks', 'links', 'lynx', 'w3m', 'www-browser']
 
 INDENT = 5
 
+
 # Global helper functions
 def make_safe_url(url: str) -> str:
     """
@@ -127,6 +128,7 @@ def make_safe_url(url: str) -> str:
     fragment = urllib.parse.quote(parts.fragment)
 
     return urllib.parse.urlunsplit((parts.scheme, netloc, path, query, fragment))
+
 
 def open_url(url):
     """Open an URL in the user's default web browser.
